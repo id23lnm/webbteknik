@@ -1,0 +1,151 @@
+/* Grundläggande styling */
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* HEADER */
+.top-bar {
+    background-color: #f1de8d; /* Gul färg */
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* NAVIGATION */
+nav {
+    position: absolute; /* Placera ovanpå välkomstsektionen */
+    width: 100%;
+    top: 20%; /* Justera så att den ligger under logotypen */
+    left: 0;
+    text-align: center;
+	padding: 15px 0;
+    z-index: 3; /* Se till att den ligger ovanpå bilden */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HUVUDINNEHÅLL */
+.about-us-section {
+    background: url('grey.png') no-repeat center center/cover;
+    min-height: 100vh; /* Fyll hela skärmen */
+    display: grid;
+    grid-template-columns: 50% 50%; /* Första kolumnen text, andra tom */
+    align-items: center;
+    padding-left: 5%;
+    padding-top: 10px; /* Justerar för att inte krocka med navigationen */
+    position: relative;
+}
+
+/* TEXTEN LIGGER TILL VÄNSTER */
+.about-us-text {
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 40px;
+	margin: 50px;
+    color: white;
+    text-align: left;
+}
+
+/* Höger kolumn: innehåller videon och texten under */
+.about-us-media {
+    display: grid;
+    grid-template-rows: auto auto; /* Först video, sen text */
+    justify-items: left; /* Centrerar texten */
+	padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+/* Styla videon */
+.about-us-media video {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+	/* Justera navigeringens placering */
+    nav {
+        position: absolute;
+        top: 20%; /* Anpassa så att den ligger under loggan */
+        left: 50%;
+        transform: translateX(-50%); /* Centrerar horisontellt */
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Anpassa menylänkar */
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(5, auto); /* Håller menyn horisontell */
+        gap: 2px; /* Mellanrum mellan länkar */
+        justify-content: center; /* Centrerar länkarna */
+    }
+
+    nav ul li a {
+        font-size: 10px; /* Minska textstorleken */
+        padding: 3px; /* Mindre padding */
+    }
+
+    /* Ändra layouten */
+    .about-us-section {
+		grid-template-columns: 1fr;
+        display: grid;
+        grid-template-rows: auto auto 1fr; /* Logga, meny, innehåll */
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px 5% 0;
+    }
+
+    /* Centrera texten */
+    .abous-us-text {
+		margin:auto;
+        max-width: 100%;
+        text-align: center;
+		justify-self: center; /* Centrerar i grid */
+
+    }
+
+	.about-us-media {
+		display: grid;
+		grid-template-rows: auto auto; /* Först video, sedan text */
+		justify-items: center; /* Centrerar innehållet horisontellt */
+		text-align: center; /* Säkerställer att texten inte blir vänsterställd */
+		width: 100%; /* Säkerställer att den inte är mindre än nödvändigt */
+	}
+
+	.about-us-media video {
+		max-width: 100%; /* Anpassar videon till skärmen */
+		width: 90%; /* Gör videon mindre än full bredd */
+	}
+
+	.about-us-media p {
+		width: 100%; /* Tar upp hela raden */
+		text-align: center; /* Säkerställer centrerad text */
+		margin-top: 10px; /* Liten marginal för luft mellan video och text */
+		font-size: 12px;
+	}
+}

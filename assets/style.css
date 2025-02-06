@@ -1,0 +1,484 @@
+/* GRUNDLÄGGANDE STYLING FÖR ALLA HTML-SIDOR */
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background: url('Frame\ 9.png') no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.top-bar {
+    background-color: #f1de8d; /* Gul färg */
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* NAVIGATION */
+nav {
+    position: absolute; /* Placera ovanpå välkomstsektionen */
+    width: 100%;
+    top: 20%; /* Justera så att den ligger under logotypen */
+    left: 0;
+    text-align: center;
+	padding: 15px 0;
+    z-index: 3; /* Se till att den ligger ovanpå bilden */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*STYLING FÖR index.html----------------------------------------------------------------------------------*/
+
+/* HUVUDINNEHÅLL */
+.welcome-section {
+    background: url('pizza.png') no-repeat center center/cover;
+    min-height: 100vh; /* Fyll hela skärmen */
+    display: grid;
+    grid-template-columns: 40% 60%; /* Första kolumnen text, andra tom */
+    align-items: center;
+    padding-left: 5%;
+    padding-top: 10px; /* Justerar för att inte krocka med navigationen */
+    position: relative;
+}
+
+/* TEXTEN LIGGER TILL VÄNSTER */
+.welcome-text {
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+}
+
+/*STYLING FÖR meny.html--------------------------------------------------------------------------------*/
+
+/* NAVIGERING FÖR MATKATEGORIER */
+
+.menu-categories {
+    background-color: rgba(90, 66, 50, 0.8); /* Transparent brun färg */
+    padding: 15px 0;
+	font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top: 210px;
+    z-index: 10;
+}
+
+.menu-categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+
+.menu-categories ul li {
+    display: inline;
+}
+
+.menu-categories ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* HUVUDINNEHÅLL: MENYN MED CSS GRID */
+.menu-container {
+	background-color: rgba(90, 66, 50, 0.8);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+	margin-top: 150px;
+}
+
+/* STYLING FÖR MENYSEKTIONER */
+.menu-section {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+	color: white;
+}
+
+.menu-section h2 {
+    color: white;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.menu-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	
+}
+
+.menu-section ul li {
+    font-size: 18px;
+    padding: 8px 0;
+	text-align: left;
+
+}
+
+.menu-section ul li:last-child {
+    border-bottom: none;
+}
+
+/* Styling för tabellen inom menyn */
+.menu-section table {
+    width: 100%; /* Anpassa tabellen till sektionens bredd */
+    max-width: 600px; /* Begränsa storleken */
+    margin: 0 auto; /* Centrera tabellen */
+    border-collapse: separate; /* Gör att det blir mellanrum mellan cellerna */
+    border-spacing: 10px; /* Ger tydligt avstånd mellan cellerna */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*STYLING FÖR om-oss.html-----------------------------------------------------------------------------*/
+/* HUVUDINNEHÅLL */
+.about-us-section {
+    background: url('grey.png') no-repeat center center/cover;
+    min-height: 100vh; /* Fyll hela skärmen */
+    display: grid;
+    grid-template-columns: 50% 50%; /* Första kolumnen text, andra tom */
+    align-items: center;
+    padding-left: 5%;
+    padding-top: 10px; /* Justerar för att inte krocka med navigationen */
+    position: relative;
+}
+
+/* TEXTEN LIGGER TILL VÄNSTER */
+.about-us-text {
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 40px;
+	margin: 50px;
+    color: white;
+    text-align: left;
+}
+
+/* Höger kolumn: innehåller videon och texten under */
+.about-us-media {
+    display: grid;
+    grid-template-rows: auto auto; /* Först video, sen text */
+    justify-items: left; /* Centrerar texten */
+	padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+/* Styla videon */
+.about-us-media video {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+/*STYLING FÖR hitta-hit.html-------------------------------------------------------------------------*/
+
+/* FIND US SECTION */
+.find-us-section {
+	background: url('grey.png') no-repeat center center/cover;
+	min-height: 100vh; /* Fyll hela skärmen */
+    display: grid;
+    grid-template-columns: 60% 40%; /* Dela upp i två lika stora kolumner */
+    gap: 10px; /* Mellanrum mellan kolumner */
+    align-items: center; /* Justera så att innehållet är vertikalt centrerat */
+    padding: 50px;
+}
+
+/* KARTA */
+.find-us-map img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px; /* Rundade hörn */
+}
+
+/* TEXTBLOCK */
+.find-us-text {
+	color: white;
+    max-width: 100%;
+    text-align: left; /* Texten till vänsterjusterad */
+}
+
+.find-us-text h2 {
+    font-size: 20px; /* Mindre storlek för rubriken */
+}
+.foodora-info-text {
+    font-size: 14px; /* Mindre text */
+    color: white; 
+    margin-top: 100px; /* Lite avstånd mellan adressen och denna text */
+	margin-bottom: 30px;
+}
+
+.foodora-info {
+    display: grid;
+    grid-template-columns: auto 1fr; /* För att loggan ska ta så mycket plats som den behöver, och länken ska ta resten */
+    gap: 10px;
+    align-items: center; /* Vertikal centrering */
+}
+
+.foodora-info img {
+    width: 70px; /* Storlek på Foodora-loggan */
+    height: auto;
+}
+
+.foodora-info a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white; 
+}
+
+/*STYLING FÖR kontakta-oss.html----------------------------------------------------------------------------------*/
+.contact-us-section {
+	background: url('grey.png') no-repeat center center/cover;
+	min-height: 100vh; /* Fyll hela skärmen */
+    display: grid;
+    grid-template-columns: 50% 50%; /* Första kolumnen text, andra tom */
+    align-items: center;
+    padding-left: 5%;
+    padding-top: 10px; /* Justerar för att inte krocka med navigationen */
+    position: relative;
+	color: white;
+}
+
+.contact-form {
+	
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%; /* Anpassad bredd */
+    justify-self: center; /* Centrerar formuläret horisontellt i sin grid-kolumn */
+}
+
+.contact-us-text h2{
+	color: #f1de8d
+}
+
+.open-hours-text {
+    margin-top: 70px;
+}
+
+
+@media (max-width: 768px) {
+
+	/*GRUNDLÄGGANDE FÖR ALLA----------------------------------------------------------------------*/
+	/* Justera navigeringens placering */
+    nav {
+        position: absolute;
+        top: 20%; /* Anpassa så att den ligger under loggan */
+        left: 50%;
+        transform: translateX(-50%); /* Centrerar horisontellt */
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Anpassa menylänkar */
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(5, auto); /* Håller menyn horisontell */
+        gap: 2px; /* Mellanrum mellan länkar */
+        justify-content: center; /* Centrerar länkarna */
+    }
+
+    nav ul li a {
+        font-size: 0.6rem; /* Minska textstorleken */
+        padding: 3px; /* Mindre padding */
+    }
+
+	/*STYLING FÖR index.html----------------------------------------------------------------------*/
+    /* Ändra layouten */
+    .welcome-section {
+		grid-template-columns: 1fr;
+        display: grid;
+        grid-template-rows: auto auto 1fr; /* Logga, meny, innehåll */
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 100px 5% 0;
+
+        /* Ändra bakgrundsbild för mobil */
+        background: url('pizza-mobil.png') no-repeat center center/cover;
+    }
+
+    /* Centrera texten */
+    .welcome-text {
+        max-width: 100%;
+        text-align: center;
+		justify-self: center; /* Centrerar i grid */
+        padding: 10px;
+    }
+
+	/*STYLING FÖR meny.html-----------------------------------------------------------------------*/
+
+	.menu-categories {
+        display: none; /* Dölj kategorimenyn helt på mobil */
+    }
+
+	 /* Anpassa menysektionen */
+	 .menu-container {
+        max-width: 90%; /* Anpassa bredden */
+        margin-top: 70px; /* Minska toppmarginalen */
+        padding: 10px;
+    }
+
+    /* Styling för tabellen inom menyn */
+    .menu-section table {
+        width: 100%;
+        border-spacing: 5px; /* Mindre mellanrum */
+    }
+
+    .menu-section th, .menu-section td {
+        font-size: 14px; /* Minska textstorleken */
+        padding: 5px;
+    }
+
+	/* Justera rubriker i sektionen */
+    .menu-section h2 {
+        font-size: 15px; /* Minska rubrikstorleken */
+        margin-bottom: 10px; /* Lägger till lite avstånd från tabellen */
+    }
+	
+	 /* Justera textstorleken i menylistan */
+	 .menu-section ul li {
+        font-size: 10px; /* Minska textstorleken på listpunkterna */
+        padding: 2px 0; /* Mindre mellanrum mellan listpunkterna */
+    }
+
+    /* Om du vill minska storleken på stark text (t.ex. för nummer och rätter) */
+    .menu-section ul li strong {
+        font-size: 10px; /* Minska storleken för stark text */
+    }
+
+	/*STYLING FÖR om-oss.html-----------------------------------------------------------------------*/
+	/* Ändra layouten */
+    .about-us-section {
+		grid-template-columns: 1fr;
+        display: grid;
+        grid-template-rows: auto auto 1fr; /* Logga, meny, innehåll */
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px 5% 0;
+    }
+
+    /* Centrera texten */
+    .about-us-text {
+		margin:auto;
+        max-width: 100%;
+		text-align: center;
+		justify-self: center; /* Centrerar i grid */
+		margin-top:60px;
+    }
+
+	.about-us-media {
+		display: grid;
+		grid-template-rows: auto auto; /* Först video, sedan text */
+		justify-items: center; /* Centrerar innehållet horisontellt */
+		text-align: center; /* Säkerställer att texten inte blir vänsterställd */
+		width: 100%; /* Säkerställer att den inte är mindre än nödvändigt */
+	}
+
+	.about-us-media video {
+		max-width: 100%; /* Anpassar videon till skärmen */
+		width: 90%; /* Gör videon mindre än full bredd */
+	}
+
+	.about-us-media p {
+		width: 100%; /* Tar upp hela raden */
+		text-align: center; /* Säkerställer centrerad text */
+		margin-top: 10px; /* Liten marginal för luft mellan video och text */
+		font-size: 12px;
+	}
+
+	/*STYLING FÖR hitta-hit.html-----------------------------------------------------------------------*/
+
+	.find-us-section {
+		grid-template-columns: 1fr;
+        display: grid;
+        grid-template-rows: auto auto 1fr; /* Logga, meny, innehåll */
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px 5% 0;
+    }
+
+	.find-us-map {
+		margin-top: 100px;
+		padding-top: 20px; /* Lägg till extra padding för att flytta ner bilden */
+	}
+	
+    /* Centrera texten */
+    .find-us-text {
+		margin:auto;
+        max-width: 100%;
+        text-align: center;
+		justify-self: center; /* Centrerar i grid */
+    }
+
+/*STYLING FÖR kontakta-oss.html-----------------------------------------------------------------------*/
+	.contact-us-section {
+        grid-template-columns: 1fr; /* Endast en kolumn */
+        padding-left: 0; /* Tar bort vänsterpadding för att centrera innehållet */
+        text-align: center; /* Centrerar texten */
+    }
+
+    .contact-us-text {
+        order: 1; /* Placera kontakttexten först */
+        padding: 20px;
+		font-size: 12px;
+		max-width: 70%; /* Förhindrar att texten blir för bred */
+        margin: 0 auto; /* Centrerar texten */
+    }
+
+    .open-hours-text {
+        order: 2; /* Placera öppettiderna efter kontakttexten */
+        margin-top: 30px; /* Mindre avstånd på mobil */
+    }
+
+    .contact-form {
+        order: 3; /* Placera kontaktformuläret sist */
+        padding: 20px;
+    }
+
+	.contact-form textarea {
+        width: 90%; /* Gör meddelandeboxen responsiv */
+        max-width: 300px; /* Förhindrar att den blir för bred */
+        height: 100px;
+        margin: 0 auto;
+    }
+}
+
+@media print {
+	nav{
+		display: none;
+	}
+
+	p{
+		font-family: 'Times New Roman', Times, serif;
+	}
+}
