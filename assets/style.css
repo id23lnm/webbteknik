@@ -287,14 +287,13 @@ nav ul li a {
 @media (max-width: 768px) {
 
 	/*GRUNDLÄGGANDE FÖR ALLA----------------------------------------------------------------------*/
-
 	.top-bar p a {
-		color: black; /* Gör texten svart */
-		text-decoration: none; /* Ta bort understrykningen */
+		color: black; /* Ändrar färgen på autolänkade telefonnummer */
+		text-decoration: none; /* Tar bort eventuell understrykning */
 	}
 	
 	.top-bar p a:visited {
-		color: black; /* Se till att den förblir svart även efter att den besökts */
+		color: black; /* Se till att den förblir svart även efter besök */
 	}
 
 	/* Justera navigeringens placering */
@@ -464,6 +463,15 @@ nav ul li a {
 		max-width: 70%; /* Förhindrar att texten blir för bred */
         margin: 0 auto; /* Centrerar texten */
     }
+
+	.contact-us-text p a {
+		color: white; /* Ändrar färgen på autolänkade telefonnummer */
+		text-decoration: none; /* Tar bort eventuell understrykning */
+	}
+	
+	.contact-us-text p a:visited {
+		color: white; /* Se till att den förblir svart även efter besök */
+	}
 
     .open-hours-text {
         order: 2; /* Placera öppettiderna efter kontakttexten */
