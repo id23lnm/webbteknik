@@ -243,6 +243,10 @@ nav ul li a {
     align-items: center; /* Vertikal centrering */
 }
 
+.pink-text {
+    color: #D60664; 
+}
+
 .foodora-info img {
     width: 70px; /* Storlek på Foodora-loggan */
     height: auto;
