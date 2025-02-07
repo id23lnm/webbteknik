@@ -287,6 +287,16 @@ nav ul li a {
 @media (max-width: 768px) {
 
 	/*GRUNDLÄGGANDE FÖR ALLA----------------------------------------------------------------------*/
+
+	.top-bar p a {
+		color: black; /* Gör texten svart */
+		text-decoration: none; /* Ta bort understrykningen */
+	}
+	
+	.top-bar p a:visited {
+		color: black; /* Se till att den förblir svart även efter att den besökts */
+	}
+
 	/* Justera navigeringens placering */
     nav {
         position: absolute;
