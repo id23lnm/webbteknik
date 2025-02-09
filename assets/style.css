@@ -1,4 +1,5 @@
 /* GRUNDLÄGGANDE STYLING FÖR ALLA HTML-SIDOR--------------------------------------------------------*/
+
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -53,7 +54,7 @@ nav ul li a {
     background: url('pizza.png') no-repeat center center/cover;
     min-height: 100vh; /* Fyll hela skärmen */
     display: grid;
-    grid-template-columns: 40% 60%; /* Första kolumnen text, andra tom */
+    grid-template-columns: 40% 60%; /* Vänster kolumn med text, höger tom */
     align-items: center;
     padding-left: 5%;
     padding-top: 10px;
@@ -147,29 +148,30 @@ nav ul li a {
 
 /* TABELLEN I MENYN */
 .menu-section table {
-    width: 100%; /* Anpassa tabellen till sektionens bredd */
+    width: 100%;
     max-width: 600px; /* Begränsa storleken */
     margin: 0 auto; /* Centrera tabellen */
-    border-collapse: separate; /* Gör att det blir mellanrum mellan cellerna */
-    border-spacing: 10px; /* Ger tydligt avstånd mellan cellerna */
+    border-collapse: separate; /* Mellanrum mellan cellerna */
+    border-spacing: 10px; /* Tydligt avstånd mellan cellerna */
     border-radius: 10px;
     padding: 10px;
 }
 
 /*STYLING FÖR om-oss.html-----------------------------------------------------------------------------*/
+
 /* HUVUDINNEHÅLL */
 .about-us-section {
     background: url('grey.png') no-repeat center center/cover;
-    min-height: 100vh; /* Fyll hela skärmen */
+    min-height: 100vh; 
     display: grid;
-    grid-template-columns: 50% 50%; /* Första kolumnen text, andra tom */
+    grid-template-columns: 50% 50%; /* Vänster kolumnen med text, höger med video */
     align-items: center;
     padding-left: 5%;
-    padding-top: 10px; /* Justerar för att inte krocka med navigationen */
+    padding-top: 10px;
     position: relative;
 }
 
-/* TEXTEN LIGGER TILL VÄNSTER */
+/* TEXT I VÄNSTA KOLUMNEN */
 .about-us-text {
     max-width: 90%;
     padding: 20px;
@@ -179,17 +181,17 @@ nav ul li a {
     text-align: left;
 }
 
-/* Höger kolumn: innehåller videon och texten under */
+/* VIDEO MED TEXT I HÖGRA KOLUMNEN */
 .about-us-media {
     display: grid;
     grid-template-rows: auto auto; /* Först video, sen text */
-    justify-items: left; /* Centrerar texten */
+    justify-items: left;
 	padding: 20px;
     text-align: left;
     color: white;
 }
 
-/* Styla videon */
+/* VIDEON */
 .about-us-media video {
     max-width: 90%;
     border-radius: 10px;
@@ -197,14 +199,14 @@ nav ul li a {
 
 /*STYLING FÖR hitta-hit.html-------------------------------------------------------------------------*/
 
-/* FIND US SECTION */
+/* HUVUDINNEHÅLL */
 .find-us-section {
 	background: url('grey.png') no-repeat center center/cover;
-	min-height: 100vh; /* Fyll hela skärmen */
+	min-height: 100vh;
     display: grid;
-    grid-template-columns: 60% 40%; /* Dela upp i två lika stora kolumner */
+    grid-template-columns: 60% 40%; /* Vänster kolumn med karta, högrer med text */
     gap: 10px; /* Mellanrum mellan kolumner */
-    align-items: center; /* Justera så att innehållet är vertikalt centrerat */
+    align-items: center; 
     padding: 50px;
 }
 
@@ -212,31 +214,32 @@ nav ul li a {
 .find-us-map img {
     max-width: 90%;
     height: auto;
-    border-radius: 10px; /* Rundade hörn */
+    border-radius: 10px;
 }
 
 /* TEXTBLOCK */
 .find-us-text {
 	color: white;
     max-width: 100%;
-    text-align: left; /* Texten till vänsterjusterad */
+    text-align: left; 
 }
 
 .find-us-text h2 {
     font-size: 20px; /* Mindre storlek för rubriken */
 }
+
 .foodora-info-text {
-    font-size: 14px; /* Mindre text */
+    font-size: 14px; 
     color: white; 
-    margin-top: 100px; /* Lite avstånd mellan adressen och denna text */
+    margin-top: 100px; /* Avstånd mellan adressen och denna text */
 	margin-bottom: 30px;
 }
 
 .foodora-info {
     display: grid;
-    grid-template-columns: auto 1fr; /* För att loggan ska ta så mycket plats som den behöver, och länken ska ta resten */
+    grid-template-columns: auto 1fr; /* Loggan ska ta så mycket plats som den behöver, länken ska ta resten */
     gap: 10px;
-    align-items: center; /* Vertikal centrering */
+    align-items: center; 
 }
 
 .pink-text {
@@ -254,25 +257,26 @@ nav ul li a {
     color: white; 
 }
 
-/*STYLING FÖR kontakta-oss.html----------------------------------------------------------------------------------*/
+/*STYLING FÖR kontakta-oss.html----------------------------------------------------------------------*/
+
+/* HUVUDINNEHÅLL */
 .contact-us-section {
 	background: url('grey.png') no-repeat center center/cover;
-	min-height: 100vh; /* Fyll hela skärmen */
+	min-height: 100vh; 
     display: grid;
-    grid-template-columns: 50% 50%; /* Första kolumnen text, andra tom */
+    grid-template-columns: 50% 50%; /* Vänster kolumn med formulär, höger med text */
     align-items: center;
     padding-left: 5%;
-    padding-top: 10px; /* Justerar för att inte krocka med navigationen */
+    padding-top: 10px;
     position: relative;
 	color: white;
 }
 
 .contact-form {
-	
     padding: 10px;
     border-radius: 10px;
     width: 80%; /* Anpassad bredd */
-    justify-self: center; /* Centrerar formuläret horisontellt i sin grid-kolumn */
+    justify-self: center; 
 }
 
 .contact-us-text h2{
@@ -283,20 +287,21 @@ nav ul li a {
     margin-top: 70px;
 }
 
-
+/*MINDRE SKÄRM*/
 @media (max-width: 768px) {
 
 	/*GRUNDLÄGGANDE FÖR ALLA----------------------------------------------------------------------*/
+
 	.top-bar p a {
-		color: black; /* Ändrar färgen på autolänkade telefonnummer */
-		text-decoration: none; /* Tar bort eventuell understrykning */
+		color: black; /* Ändra färg på autolänkade telefonnummer */
+		text-decoration: none; /* Ta bort eventuell understrykning */
 	}
 	
 	.top-bar p a:visited {
 		color: black; /* Se till att den förblir svart även efter besök */
 	}
 
-	/* Justera navigeringens placering */
+	/* JUSTERA NAVIGERINGS PLACERING */
     nav {
         position: absolute;
         top: 20%; /* Anpassa så att den ligger under loggan */
@@ -306,21 +311,22 @@ nav ul li a {
         text-align: center;
     }
 
-    /* Anpassa menylänkar */
+    /* ANPASSA MENYLÄNKAR */
     nav ul {
         display: grid;
         grid-template-columns: repeat(5, auto); /* Håller menyn horisontell */
-        gap: 2px; /* Mellanrum mellan länkar */
-        justify-content: center; /* Centrerar länkarna */
+        gap: 2px; 
+        justify-content: center;
     }
 
     nav ul li a {
-        font-size: 0.6rem; /* Minska textstorleken */
-        padding: 3px; /* Mindre padding */
+        font-size: 0.6rem; 
+        padding: 3px; 
     }
 
 	/*STYLING FÖR index.html----------------------------------------------------------------------*/
-    /* Ändra layouten */
+
+    /* ÄNDRA LAYOUT */
     .welcome-section {
 		grid-template-columns: 1fr;
         display: grid;
@@ -329,16 +335,14 @@ nav ul li a {
         align-items: center;
         text-align: center;
         padding: 100px 5% 0;
-
-        /* Ändra bakgrundsbild för mobil */
-        background: url('pizza-mobil.png') no-repeat center center/cover;
+        background: url('pizza-mobil.png') no-repeat center center/cover; /* Ändra bakgrundsbild för mobil */
     }
 
-    /* Centrera texten */
+    /* CENTRERA TEXT */
     .welcome-text {
         max-width: 100%;
         text-align: center;
-		justify-self: center; /* Centrerar i grid */
+		justify-self: center;
         padding: 10px;
     }
 
@@ -348,43 +352,43 @@ nav ul li a {
         display: none; /* Dölj kategorimenyn helt på mobil */
     }
 
-	 /* Anpassa menysektionen */
+	 /* ANPASSA MENYSEKTIONEN */
 	 .menu-container {
         max-width: 90%; /* Anpassa bredden */
         margin-top: 70px; /* Minska toppmarginalen */
         padding: 10px;
     }
 
-    /* Styling för tabellen inom menyn */
+    /* TABELLEN INOM MENYN */
     .menu-section table {
         width: 100%;
-        border-spacing: 5px; /* Mindre mellanrum */
+        border-spacing: 5px;
     }
 
     .menu-section th, .menu-section td {
-        font-size: 14px; /* Minska textstorleken */
+        font-size: 14px;
         padding: 5px;
     }
 
-	/* Justera rubriker i sektionen */
+	/* JUSTERA RUBRIKER I SEKTIONER */
     .menu-section h2 {
-        font-size: 15px; /* Minska rubrikstorleken */
-        margin-bottom: 10px; /* Lägger till lite avstånd från tabellen */
+        font-size: 15px;
+        margin-bottom: 10px;
     }
 	
-	 /* Justera textstorleken i menylistan */
+	 /* JUSTERA TEXTSTORLEK I MENYLISTAN */
 	 .menu-section ul li {
-        font-size: 10px; /* Minska textstorleken på listpunkterna */
-        padding: 2px 0; /* Mindre mellanrum mellan listpunkterna */
+        font-size: 10px; 
+        padding: 2px 0;
     }
 
-    /* Om du vill minska storleken på stark text (t.ex. för nummer och rätter) */
     .menu-section ul li strong {
         font-size: 10px; /* Minska storleken för stark text */
     }
 
-	/*STYLING FÖR om-oss.html-----------------------------------------------------------------------*/
-	/* Ändra layouten */
+	/*STYLING FÖR om-oss.html----------------------------------------------------------------------*/
+
+	/* ÄNDRA LAYOUT */
     .about-us-section {
 		grid-template-columns: 1fr;
         display: grid;
@@ -395,20 +399,20 @@ nav ul li a {
         padding: 10px 5% 0;
     }
 
-    /* Centrera texten */
+    /* CENTRERA TEXT */
     .about-us-text {
 		margin:auto;
         max-width: 100%;
 		text-align: center;
-		justify-self: center; /* Centrerar i grid */
+		justify-self: center;
 		margin-top:50px;
     }
 
 	.about-us-media {
 		display: grid;
 		grid-template-rows: auto auto; /* Först video, sedan text */
-		justify-items: center; /* Centrerar innehållet horisontellt */
-		text-align: center; /* Säkerställer att texten inte blir vänsterställd */
+		justify-items: center; 
+		text-align: center; 
 		width: 100%; /* Säkerställer att den inte är mindre än nödvändigt */
 	}
 
@@ -418,14 +422,15 @@ nav ul li a {
 	}
 
 	.about-us-media p {
-		width: 100%; /* Tar upp hela raden */
-		text-align: center; /* Säkerställer centrerad text */
-		margin-top: 10px; /* Liten marginal för luft mellan video och text */
+		width: 100%; 
+		text-align: center;
+		margin-top: 10px; 
 		font-size: 12px;
 	}
 
-	/*STYLING FÖR hitta-hit.html-----------------------------------------------------------------------*/
+	/*STYLING FÖR hitta-hit.html-------------------------------------------------------------------*/
 
+	/* ÄNDRA LAYOUT */
 	.find-us-section {
 		grid-template-columns: 1fr;
         display: grid;
@@ -438,22 +443,23 @@ nav ul li a {
 
 	.find-us-map {
 		margin-top: 100px;
-		padding-top: 20px; /* Lägg till extra padding för att flytta ner bilden */
+		padding-top: 20px;
 	}
 	
-    /* Centrera texten */
+    /* CENTRERA TEXTEN */
     .find-us-text {
 		margin:auto;
         max-width: 100%;
         text-align: center;
-		justify-self: center; /* Centrerar i grid */
+		justify-self: center;
     }
 
-/*STYLING FÖR kontakta-oss.html-----------------------------------------------------------------------*/
+/*STYLING FÖR kontakta-oss.html--------------------------------------------------------------------*/
+
 	.contact-us-section {
-        grid-template-columns: 1fr; /* Endast en kolumn */
+        grid-template-columns: 1fr; 
         padding-left: 0; /* Tar bort vänsterpadding för att centrera innehållet */
-        text-align: center; /* Centrerar texten */
+        text-align: center;
     }
 
     .contact-us-text {
@@ -470,12 +476,12 @@ nav ul li a {
 	}
 	
 	.contact-us-text p a:visited {
-		color: white; /* Se till att den förblir svart även efter besök */
+		color: white; /* Se till att den förblir vit även efter besök */
 	}
 
     .open-hours-text {
         order: 2; /* Placera öppettiderna efter kontakttexten */
-        margin-top: 30px; /* Mindre avstånd på mobil */
+        margin-top: 30px; 
     }
 
     .contact-form {
@@ -484,13 +490,14 @@ nav ul li a {
     }
 
 	.contact-form textarea {
-        width: 90%; /* Gör meddelandeboxen responsiv */
+        width: 90%; 
         max-width: 300px; /* Förhindrar att den blir för bred */
         height: 100px;
         margin: 0 auto;
     }
 }
 
+/*VID UTSKRIFT*/
 @media print {
 	nav{
 		display: none;
