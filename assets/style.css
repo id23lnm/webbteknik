@@ -142,10 +142,6 @@ nav ul li a {
 	text-align: left;
 }
 
-.menu-section ul li:last-child {
-    border-bottom: none;
-}
-
 /* TABELLEN I MENYN */
 .menu-section table {
     width: 100%;
