@@ -1,4 +1,4 @@
-/* GRUNDLÄGGANDE STYLING FÖR ALLA HTML-SIDOR */
+/* GRUNDLÄGGANDE STYLING FÖR ALLA HTML-SIDOR--------------------------------------------------------*/
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -6,13 +6,13 @@ h1 {
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-	background: url('Frame\ 9.png') no-repeat center center/cover;
+	background: url('grey-big.png') no-repeat center center/cover;
     min-height: 100vh;
 }
 
 /* HEADER */
 .top-bar {
-    background-color: #f1de8d; /* Gul färg */
+    background-color: #f1de8d;
     text-align: center;
     padding: 15px;
     font-weight: bold;
@@ -21,10 +21,9 @@ body {
 
 /* NAVIGATION */
 nav {
-    position: absolute; /* Placera ovanpå välkomstsektionen */
+    position: absolute; /* Placera ovanpå innehållet */
     width: 100%;
     top: 20%; /* Justera så att den ligger under logotypen */
-    left: 0;
     text-align: center;
 	padding: 15px 0;
     z-index: 3; /* Se till att den ligger ovanpå bilden */
@@ -47,7 +46,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-/*STYLING FÖR index.html----------------------------------------------------------------------------------*/
+/* STYLING FÖR index.html------------------------------------------------------------------------------*/
 
 /* HUVUDINNEHÅLL */
 .welcome-section {
@@ -57,11 +56,11 @@ nav ul li a {
     grid-template-columns: 40% 60%; /* Första kolumnen text, andra tom */
     align-items: center;
     padding-left: 5%;
-    padding-top: 10px; /* Justerar för att inte krocka med navigationen */
+    padding-top: 10px;
     position: relative;
 }
 
-/* TEXTEN LIGGER TILL VÄNSTER */
+/* VÄLKOMSTTEXT I VÄNSTA KOLUMNEN */
 .welcome-text {
     max-width: 90%;
     padding: 20px;
@@ -70,12 +69,11 @@ nav ul li a {
     text-align: left;
 }
 
-/*STYLING FÖR meny.html--------------------------------------------------------------------------------*/
+/* STYLING FÖR meny.html------------------------------------------------------------------------------*/
 
 /* NAVIGERING FÖR MATKATEGORIER */
-
 .menu-categories {
-    background-color: rgba(90, 66, 50, 0.8); /* Transparent brun färg */
+    background-color: rgba(90, 66, 50, 0.8);
     padding: 15px 0;
 	font-size: 12px;
     text-align: center;
@@ -104,7 +102,7 @@ nav ul li a {
     border-radius: 5px;
 }
 
-/* HUVUDINNEHÅLL: MENYN MED CSS GRID */
+/* HUVUDINNEHÅLL */
 .menu-container {
 	background-color: rgba(90, 66, 50, 0.8);
     display: grid;
@@ -116,7 +114,7 @@ nav ul li a {
 	margin-top: 150px;
 }
 
-/* STYLING FÖR MENYSEKTIONER */
+/* MENYSEKTIONER */
 .menu-section {
     padding: 20px;
     border-radius: 10px;
@@ -135,21 +133,19 @@ nav ul li a {
     list-style: none;
     padding: 0;
     margin: 0;
-	
 }
 
 .menu-section ul li {
     font-size: 18px;
     padding: 8px 0;
 	text-align: left;
-
 }
 
 .menu-section ul li:last-child {
     border-bottom: none;
 }
 
-/* Styling för tabellen inom menyn */
+/* TABELLEN I MENYN */
 .menu-section table {
     width: 100%; /* Anpassa tabellen till sektionens bredd */
     max-width: 600px; /* Begränsa storleken */
