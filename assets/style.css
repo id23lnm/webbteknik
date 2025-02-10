@@ -189,6 +189,7 @@ nav ul li a {
 
 /* VIDEON */
 .about-us-media video {
+	width: 100%;
     max-width: 90%;
     border-radius: 10px;
 }
