@@ -201,7 +201,7 @@ nav ul li a {
 	background: url('grey.png') no-repeat center center/cover;
 	min-height: 100vh;
     display: grid;
-    grid-template-columns: 60% 40%; /* Vänster kolumn med karta, högrer med text */
+    grid-template-columns: 60% 40%; /* Vänster kolumn med karta, höger med text */
     gap: 10px; /* Mellanrum mellan kolumner */
     align-items: center; 
     padding: 50px;
@@ -330,7 +330,7 @@ nav ul li a {
     .welcome-section {
 		grid-template-columns: 1fr;
         display: grid;
-        grid-template-rows: auto auto 1fr; /* Logga, meny, innehåll */
+        grid-template-rows: auto auto 1fr; 
         justify-items: center;
         align-items: center;
         text-align: center;
