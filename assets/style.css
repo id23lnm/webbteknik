@@ -65,7 +65,6 @@ nav ul li a {
 .welcome-text {
     max-width: 90%;
     padding: 20px;
-    border-radius: 10px;
     color: white;
     text-align: left;
 }
@@ -434,7 +433,7 @@ nav ul li a {
 	.find-us-section {
 		grid-template-columns: 1fr;
         display: grid;
-        grid-template-rows: auto auto 1fr; /* Logga, meny, innehåll */
+        grid-template-rows: auto auto 1fr; 
         justify-items: center;
         align-items: center;
         text-align: center;
