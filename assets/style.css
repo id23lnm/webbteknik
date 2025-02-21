@@ -71,6 +71,11 @@ nav ul li a {
 
 /* STYLING FÖR meny.html------------------------------------------------------------------------------*/
 
+#pizza-recommendation {
+    color: white;			/* Gör texten vit */
+    text-align: center;		/* Centrerar texten */
+}
+
 /* NAVIGERING FÖR MATKATEGORIER */
 .menu-categories {
     background-color: rgba(90, 66, 50, 0.8);
@@ -346,6 +351,11 @@ nav ul li a {
     }
 
 	/*STYLING FÖR meny.html-----------------------------------------------------------------------*/
+
+	#pizza-recommendation {
+		margin-top: 15px;
+		font-size: 12px;
+	}
 
 	.menu-categories {
         display: none; /* Dölj kategorimenyn helt på mobil */
