@@ -47,6 +47,31 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a.active {
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+}
+
+#scrollToTop {
+    position: fixed; /* Fixera knappen på sidan */
+    bottom: 20px; /* Placera den nära botten */
+    right: 20px; /* Placera den nära högerkant */
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Göm knappen till att börja med */
+    transition: opacity 0.3s ease; /* Mjuk övergång för när knappen visas */
+	z-index: 3;
+}
+
+#scrollToTop:hover {
+    background-color: grey; /* Gör knappen mörkare vid hover */
+}
+
 /* STYLING FÖR index.html------------------------------------------------------------------------------*/
 
 /* HUVUDINNEHÅLL */
