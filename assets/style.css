@@ -304,6 +304,12 @@ nav ul li a.active {
     justify-self: center; 
 }
 
+/* Ursprunglig stil för input och textarea */
+#form input, #form textarea {
+    font-size: 14px;    
+    padding: 2px;      
+}
+
 .contact-us-text h2{
 	color: #f1de8d
 }
