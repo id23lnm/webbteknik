@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matbiten</title>
     <link rel="stylesheet" href="../assets/style.css">
+	<script src="../jquery-3.7.1.min.js"></script>
+	<script src="../jquery-ui-1.14.1.custom/jquery-ui.min.js"></script>
 </head>
  
 <body>
     <!-- HEADER: Logotyp -->
     <header class="top-bar">
+		<img src="../assets/animated-pizza.png" id="pizza" alt="Pizza">
         <h1>MATBITEN</h1>
         <p>Umedalsalén 25, Umeå &nbsp; &nbsp; 090-31600</p>
+		<div id="plate">
+			<p>Drag pizzan hit!</p>
+		</div>
     </header>
 
     <!-- Navigeringsmeny -->
@@ -52,5 +58,6 @@
     </main>
 	<script src="../javascript/navigation.js"></script>
 	<script src="../javascript/scrollButtom.js"></script>
+	<script src="../javascript/pizzaJqueryUI.js"></script>
 </body>
 </html>
