@@ -95,10 +95,6 @@ nav ul li a.active {
 	z-index: 3;
 }
 
-#scrollToTop:hover {
-    background-color: grey; /* Gör knappen mörkare vid hover */
-}
-
 /* STYLING FÖR index.html------------------------------------------------------------------------------*/
 
 /* HUVUDINNEHÅLL */
